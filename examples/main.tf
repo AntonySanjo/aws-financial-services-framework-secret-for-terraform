@@ -19,7 +19,6 @@ provider "aws" {
   }
 }
 
-
 # Create a role with only the permissions needed to instantiate this module
 data "aws_iam_policy_document" "assume_role" {
   statement {
