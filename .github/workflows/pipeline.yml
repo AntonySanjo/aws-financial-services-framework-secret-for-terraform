@@ -92,4 +92,4 @@ jobs:
     - name: Unit tests
       run: |
         go mod init "github.com/aws/aws-sdk-go/aws"
-        make run-unit-tests          
+        make run-unit-tests       
