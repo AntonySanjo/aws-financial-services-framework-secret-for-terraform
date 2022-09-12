@@ -55,7 +55,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-
     - name: Configure AWS credentials for team unit testing account
       uses: aws-actions/configure-aws-credentials@v1
       with:
