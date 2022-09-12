@@ -47,8 +47,7 @@ jobs:
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
       run:
-        shell: bash
-        
+        shell: bash        
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
