@@ -11,7 +11,7 @@ This module provisions a secrets manager secret with the kind of defaults that o
 
     module "secrets_manager" {
         source                  = "github.com/aws-samples/aws-financial-services-framework-secret-for-terraform"
-        region                  = "us-east-2"
+        region                  = "us-east-1"
         secret_name             = "my_random_password"
         length                  = 40
         requirements            = {
@@ -34,7 +34,7 @@ This module provisions a secrets manager secret with the kind of defaults that o
     module "secrets_manager" {
         source                  = "github.com/aws-samples/aws-financial-services-framework-secret-for-terraform"
         version                 = "0.0.2"
-        region                  = "us-east-2"
+        region                  = "us-east-1"
         secret_name             = "my_secret_values"
         recovery_window_in_days = 0
         secret_values = {
