@@ -11,7 +11,7 @@ provider "aws" {
 provider "aws" {
   version = "~> 2.7"
   region  = var.aws_region
-  #alias   = "launch"
+  alias   = "AWSUserTerraform"
   assume_role {
     role_arn     = aws_iam_role.test_launch_role.arn
     session_name = "terraform_unit_test"
