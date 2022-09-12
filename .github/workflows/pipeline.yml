@@ -54,7 +54,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: Checkout
       uses: actions/checkout@v2
-      
+
 
     - name: Configure AWS credentials for team unit testing account
       uses: aws-actions/configure-aws-credentials@v1
@@ -75,6 +75,7 @@ jobs:
         terraform_version: 0.13.1
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
         terraform_wrapper: false
+        
 
       # Run static analysis on terraform plan file using terraform-compliance
     - name: Setup Python environment
